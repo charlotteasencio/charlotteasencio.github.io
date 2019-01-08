@@ -1,0 +1,27 @@
+<div class="section4">
+  <div id="section4Content">
+  <h1>Connect With Me</h1>
+    <form action="mailto:charlotte.e.asencio@gmail.com" method="POST" enctype="text/plain">
+        <div class="inputRow">
+          <label for="name-input">Name</label>
+          <input class="form-control" id="name-input" type="text" name="Name: ">
+        </div>
+        <div class="inputRow">
+          <label for="email-input">Email</label>
+          <input class="form-control" id="email-input" type="email" name="Reply To: ">
+        </div>
+        <div class="inputRow">
+          <label for="comment-input">Message</label>
+          <textarea class="form-control" id="comment-input" rows="5" name="Message: "></textarea>
+        </div>
+        <button class="sendButton" id="add-user" type="submit">Submit</button>
+      </form>
+      <div id="centerLinks">
+        <a href="https://github.com/charlotteasencio" target="_blank"><img src="assets/images/if_mark-github_298822.png" class="social" alt="github"></a>
+        <a href="https://www.linkedin.com/in/charlotte-asencio-7b84b164" target="_blank"><img src="assets/images/if_square-linkedin_317725 .png" class="social" alt="linkedin"></a>
+        <a href="mailto:charlotte.e.asencio@gmail.com"><mat-icon id="emailIcon">email</mat-icon></a>
+        <!--<a href="assets/resume.pdf"><button class="btn btn-default">Resume</button></a>-->
+      </div>
+    </div>
+  <div class="downArrow"><mat-icon id="section4UpArrow" (click)="scrollToAbout('section1')">keyboard_arrow_up</mat-icon></div>
+</div>
