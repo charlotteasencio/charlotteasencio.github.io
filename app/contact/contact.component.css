@@ -1,0 +1,140 @@
+.section4 {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(28, 28, 28);
+    padding-top: 70px;
+}
+
+#section4Content {
+    flex-grow: 1;
+    margin-top: 70px;
+}
+
+#section4Content h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#section4Content form {
+    color: rgb(28, 28, 28);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sendButton {
+    background-color: rgb(0, 127, 127, .9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: -1px 2px #999;
+}
+
+.sendButton:hover {
+    background-color: rgb(0, 127, 127);
+}
+
+.sendButton:active {
+    background-color: rgb(220, 20, 60);
+    box-shadow: -1 2px #666;
+    transform: translateY(2px);
+}
+
+.inputRow {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputRow label {
+    margin-bottom: 10px;
+}
+
+.inputRow input {
+    outline: none;
+    width: 500px;
+    height: 26px;
+}
+
+.inputRow input:focus {
+    outline: 1px solid crimson;
+}
+
+.inputRow textarea {
+    width: 800px;
+    height: 200px;
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+
+.inputRow textarea:focus {
+    border: 1px solid crimson;
+}
+
+#centerLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#emailIcon {
+    color: rgb(217,180,73);
+    font-size: 50px;
+}
+
+#section4UpArrow {
+    font-size: 44px;
+    padding-bottom: 40px;
+    color: crimson
+}
+
+#section4UpArrow:hover {
+    color: grey;
+}
+
+@media only screen and (max-width: 1200px) {
+    .section4 {
+        height: auto;
+    }
+
+    #section4Content form {
+        width: 500px;
+    }
+
+    #section4Content form textarea {
+        width: 500px;
+    }
+    
+    #section4UpArrow {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    #section4Content form {
+        width: 350px;
+    }
+
+    #section4Content form input {
+        width: 350px;
+    }
+
+    #section4Content form textarea {
+        width: 350px;
+    }
+
+    #centerLinks {
+        margin-bottom: 40px;
+    }
+}

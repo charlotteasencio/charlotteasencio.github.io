@@ -1,0 +1,132 @@
+#menuButton {
+    font-size: 30px; 
+    color: white;
+    cursor: pointer;
+    z-index: 101;
+    padding: 10px;
+    font-size: 32px;
+    position: fixed;
+}
+
+#menuButton.hidden {
+    visibility: hidden;
+}
+
+#menuButton:hover {
+    color: crimson;
+    transition: 1s;
+}
+
+#fullMenu.hidden {
+    width: 0px;
+    left: -400px;
+}
+
+#fullMenu {
+    height: calc(100vh);
+    background: rgb(28, 28, 28);
+    position: fixed;
+    transition: 1s;
+    width: 99%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+#closeButton {
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+
+#closeButton.hidden {
+    visibility: hidden;
+}
+
+#menuOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 44px;
+}
+
+#menuOptions h2 {
+    color: white;
+    margin-top: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 94px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#menuOptions h2:hover {
+    color: gray;
+    transition: 1s;
+}
+
+.inlineDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrowIcon {
+    font-size: 54px;
+    margin-bottom: 35px;
+    margin-right: 70px;
+    /*color: rgb(220, 20, 60, .9);*/
+    position: relative;
+    top: 25%;
+}
+
+#homeIcon {
+    color: rgb(220, 20, 60);
+}
+
+#homeIcon:hover {
+    color: white;
+    transition: 1s;
+}
+
+#aboutIcon {
+    color: rgb(117,175,168); 
+}
+
+#aboutIcon:hover {
+    color: white;
+    transition: 1s;
+}
+
+#projectsIcon {
+    color: rgb(217,180,73)
+}
+
+#projectsIcon:hover {
+    color: white;
+    transition: 1s;
+}
+
+#contactIcon {
+    color: teal;
+}
+
+#contactIcon:hover {
+    color: white;
+    transition: 1s;
+}
+
+@media only screen and (max-width: 1200px) {
+    #fullMenu {
+        height: 100%;
+        background: rgb(28, 28, 28);
+        position: fixed;
+        transition: 1s;
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 100px;
+    }
+}
